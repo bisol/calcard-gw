@@ -1,0 +1,39 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.bisol.calcard",
+      "nativeLanguage": "pt-br"
+    },
+    "jhipsterVersion": "5.7.0",
+    "applicationType": "gateway",
+    "baseName": "calcard",
+    "packageName": "com.bisol.calcard",
+    "packageFolder": "com/bisol/calcard",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "cacheProvider": "hazelcast",
+    "enableHibernateCache": false,
+    "websocket": "spring-websocket",
+    "databaseType": "sql",
+    "devDatabaseType": "h2Disk",
+    "prodDatabaseType": "mariadb",
+    "searchEngine": false,
+    "messageBroker": "kafka",
+    "serviceDiscoveryType": "eureka",
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "ZDE5NjMxM2NjZjVmZmQ0N2EwYjRjNzIzMDM1ZTc1NzQzM2JlZGQ5ZGJlNjdkNzQwZmM5OGVhNWMyMDljMWU3ZWExYTkyZmE3OWEwMThjZmM0ZjQ5MDkwYzQ1MzJkYWE3MTQ5OTc1MDI1OTA5ODg4NTYzYmFkMWU0YjRmZWY2MzU=",
+    "clientFramework": "react",
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "otherModules": [],
+    "enableTranslation": true,
+    "nativeLanguage": "pt-br",
+    "languages": [
+      "pt-br",
+      "en"
+    ]
+  }
+}
