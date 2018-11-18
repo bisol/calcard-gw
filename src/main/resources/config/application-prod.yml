@@ -38,6 +38,7 @@ spring:
                 binder:
                     brokers: localhost
                     zk-nodes: localhost
+#                    autoAddPartitions: true
             bindings:
                 output:
                     destination: topic-jhipster

@@ -1,20 +1,27 @@
 package com.bisol.calcard.config;
 
-import com.bisol.calcard.security.AuthoritiesConstants;
-
 import java.security.Principal;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Map;
+import java.util.Optional;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.http.server.*;
+import org.springframework.http.server.ServerHttpRequest;
+import org.springframework.http.server.ServerHttpResponse;
+import org.springframework.http.server.ServletServerHttpRequest;
 import org.springframework.messaging.simp.config.MessageBrokerRegistry;
 import org.springframework.security.authentication.AnonymousAuthenticationToken;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.web.socket.WebSocketHandler;
-import org.springframework.web.socket.config.annotation.*;
+import org.springframework.web.socket.config.annotation.EnableWebSocketMessageBroker;
+import org.springframework.web.socket.config.annotation.StompEndpointRegistry;
+import org.springframework.web.socket.config.annotation.WebSocketMessageBrokerConfigurer;
 import org.springframework.web.socket.server.HandshakeInterceptor;
 import org.springframework.web.socket.server.support.DefaultHandshakeHandler;
+
+import com.bisol.calcard.security.AuthoritiesConstants;
 
 import io.github.jhipster.config.JHipsterProperties;
 
@@ -43,6 +50,11 @@ public class WebsocketConfiguration implements WebSocketMessageBrokerConfigurer 
             .setAllowedOrigins(allowedOrigins)
             .withSockJS()
             .setInterceptors(httpSessionHandshakeInterceptor());
+		registry.addEndpoint("/topic/credit-proposal")
+	        .setHandshakeHandler(defaultHandshakeHandler())
+	        .setAllowedOrigins(allowedOrigins)
+	        .withSockJS()
+	        .setInterceptors(httpSessionHandshakeInterceptor());
     }
 
     @Bean

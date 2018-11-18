@@ -7,6 +7,7 @@ import errorMiddleware from './error-middleware';
 import notificationMiddleware from './notification-middleware';
 import loggerMiddleware from './logger-middleware';
 import websocketMiddleware from './websocket-middleware';
+import websocketUpdateMiddleware from './websocket-update-middleware';
 import { loadingBarMiddleware } from 'react-redux-loading-bar';
 
 const defaultMiddlewares = [
@@ -16,6 +17,7 @@ const defaultMiddlewares = [
   promiseMiddleware(),
   loadingBarMiddleware(),
   websocketMiddleware,
+  websocketUpdateMiddleware,
   loggerMiddleware
 ];
 const composedMiddlewares = middlewares =>

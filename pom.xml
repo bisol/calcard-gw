@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.bisol.calcard</groupId>
-    <artifactId>calcard</artifactId>
+    <artifactId>calcard-gw</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>war</packaging>
     <name>Calcard</name>
@@ -561,7 +561,7 @@
                           <image>openjdk:8-jre-alpine</image>
                       </from>
                       <to>
-                          <image>calcard:latest</image>
+                          <image>calcard-gw:latest</image>
                       </to>
                       <container>
                           <entrypoint>

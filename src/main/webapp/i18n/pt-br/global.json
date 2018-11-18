@@ -7,6 +7,7 @@
       "jhipster-needle-menu-add-element": "JHipster will add additional menu entries here (do not translate!)",
       "entities": {
         "main": "Entidades",
+        "creditProposal": "Credit Proposal",
         "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
       },
       "account": {
@@ -110,6 +111,7 @@
     },
     "validation": {
       "required": "O campo é obrigatório.",
+      "cpf": "CPF inválido",
       "minlength": "Este campo deve ter ao menos {{min}} caracteres.",
       "maxlength": "Este campo não pode ter mais que {{max}} caracteres.",
       "min": "Este campo deve ser maior que {{min}}.",
@@ -132,5 +134,5 @@
     "idexists": "Novo(a) {{entityName}} não pode ter uma ID",
     "idnull": "Invalid ID"
   },
-  "footer": "Este é o seu rodapé"
+  "footer": "by Bisol"
 }

@@ -81,6 +81,15 @@ spring:
         exclude: org.springframework.boot.actuate.autoconfigure.metrics.jdbc.DataSourcePoolMetricsAutoConfiguration
     application:
         name: calcard
+    cloud:
+        stream:
+            bindings:
+                creditProposalChannel:
+                    destination: creditProposalChannel
+                    content-type: application/json
+                creditProposalResultChannel:
+                    destination: creditProposalResultChannel
+                    content-type: application/json
     jpa:
         open-in-view: false
         properties:
